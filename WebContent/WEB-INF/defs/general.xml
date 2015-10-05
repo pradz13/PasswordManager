@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/layout/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+  
+  <definition name="index" extends="common">
+    <put-attribute name="title" value="Password Manager" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="pageName" value="index" />
+  </definition>
+  
+  <definition name="users" extends="common">
+    <put-attribute name="title" value="Users" />
+    <put-attribute name="body" value="/WEB-INF/jsp/UserDetails.jsp" />
+    <put-attribute name="pageName" value="users" />
+  </definition>
+  
+  <definition name="user_detail" extends="common">
+    <put-attribute name="title" value="User Detail" />
+    <put-attribute name="body" value="/WEB-INF/jsp/UserDetail.jsp" />
+    <put-attribute name="pageName" value="users" />
+  </definition>
+  
+  <definition name="my_account" extends="common">
+    <put-attribute name="title" value="My Account" />
+    <put-attribute name="body" value="/WEB-INF/jsp/UserDetail.jsp" />
+    <put-attribute name="pageName" value="users" />
+  </definition>
+  
+  <definition name="user_register" extends="common">
+    <put-attribute name="title" value="User Registration" />
+    <put-attribute name="body" value="/WEB-INF/jsp/UserRegister.jsp" />
+    <put-attribute name="pageName" value="user_register" />
+  </definition>
+  
+  <definition name="login" extends="common">
+    <put-attribute name="title" value="Login" />
+    <put-attribute name="body" value="/WEB-INF/jsp/Login.jsp" />
+    <put-attribute name="pageName" value="login" />
+  </definition>
+  
+  <definition name="logout" extends="common">
+    <put-attribute name="title" value="Logout" />
+    <put-attribute name="body" value="/WEB-INF/jsp/Logout.jsp" />
+    <put-attribute name="pageName" value="logout" />
+  </definition>
+</tiles-definitions>
